@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.inventoryappudacity.CatalogActivity">
+
+    <ListView
+        android:id="@+id/list_products"
+        style="@style/list_view" />
+
+    <!--EMPTY VIEW-->
+    <RelativeLayout
+        android:id="@+id/empty_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/empty_store_image"
+            android:src="@drawable/store_image"
+            style="@style/empty_state_image" />
+
+        <TextView
+            android:id="@+id/text_empty_title"
+            android:text="@string/empty_state_title"
+            style="@style/empty_state_title" />
+
+        <TextView
+            android:id="@+id/text_empty_subtitle"
+            android:text="@string/empty_state_subtitle"
+            style="@style/empty_state_subtitle" />
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:src="@drawable/ic_add_circle_outline_black_24dp"
+        style="@style/fab_style" />
+
+</RelativeLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        android:background="@color/item_background">
+
+        <ImageView
+            android:id="@+id/detailed_product_image"
+            style="@style/detailed_image" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+            <TextView
+                android:text="@string/detailed_product_name"
+                style="@style/detailed_name_label" />
+
+            <TextView
+                android:id="@+id/detailed_product_name"
+                tools:text="@string/placeholder_list_item_product_name"
+                style="@style/detailed_name_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+            <TextView
+                android:text="@string/detailed_product_price"
+                style="@style/detailed_price_label" />
+            <TextView
+                android:id="@+id/detailed_product_price"
+                tools:text="@string/placeholder_list_item_product_price"
+                style="@style/detailed_price_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+            <TextView
+                android:text="@string/detailed_supplier_name"
+                style="@style/detailed_supplier_name_label" />
+            <TextView
+                android:id="@+id/detailed_supplier_name"
+                tools:text="@string/detailed_supplier_name"
+                style="@style/detailed_supplier_name_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+            <TextView
+                android:text="@string/detailed_supplier_phone"
+                style="@style/detailed_supplier_phone_label" />
+            <TextView
+                android:id="@+id/detailed_supplier_phone"
+                tools:text="@string/placeholder_detailed_supplier_phone"
+                style="@style/detailed_supplier_phone_text" />
+            <ImageButton
+                android:id="@+id/detailed_phone_button"
+                android:src="@drawable/ic_phone_white_24dp"
+                style="@style/detailed_buttons" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="6dp">
+
+            <ImageButton
+                android:id="@+id/detailed_button_decrease"
+                android:src="@drawable/ic_indeterminate_check_box_white_24dp"
+                style="@style/detailed_buttons" />
+
+            <TextView
+                android:id="@+id/detailed_quantity"
+                tools:text="34"
+                style="@style/detailed_quantity_text" />
+
+            <ImageButton
+                android:id="@+id/detailed_button_increase"
+                android:src="@drawable/ic_add_box_white_24dp"
+                style="@style/detailed_buttons" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
